@@ -1,8 +1,10 @@
-import {Routes} from "@angular/router";
 /**
  * Created by Begin on 21-May-17.
  */
-export const appRouters : Routes = [
-  {path:'', redirectTo:'login',pathMatch: 'full'},
+import {Routes} from "@angular/router";
+export const appRouters: Routes = [
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
+  {path: 'login', loadChildren: './login/login.module#LoginModule'},
+  {path: 'main', loadChildren:'./main/main.module#MainModule'}
 
 ]
