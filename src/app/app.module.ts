@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {appRouters} from "./app.routers";
 import {RouterModule} from "@angular/router";
+import {MainModule} from "./main/main.module";
 
 @NgModule({
   declarations: [
